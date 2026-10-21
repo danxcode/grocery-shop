@@ -1,21 +1,29 @@
 <!doctype html>
-<html lang="fa">
+<html dir="rtl" lang="fa">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta content="width=device-width, initial-scale=1" name="viewport">
     <title>Document</title>
-    <link rel="stylesheet" href="css/style.css">
+    <link href="css/style.css" rel="stylesheet">
+    <script src="script/jquery-4.0.0.min.js"></script>
+    <script src="script/script.js"></script>
 </head>
 <body>
+
 <main id="top-main">
     <div class="container">
-        <div id="green-circle"></div>
-        <div id="green-efect-circle"></div>
+
+
         <header id="top-header">
+
+            <div id="green-circle"></div>
+            <div id="green-efect-circle"></div>
+            <div id="white-circle"></div>
             <nav id="main-nav">
                 <a href="#">
-                    <img src="images/site-logo.svg" alt="logo">
+                    <img alt="logo" src="images/site-logo.svg">
                 </a>
+
                 <ul>
                     <li>
                         <a href="#">
@@ -23,24 +31,28 @@
                             خانه
                         </a>
                     </li>
+
                     <li>
                         <a href="#">
                             <i class="fa-solid fa-store"></i>
                             فروشگاه
                         </a>
                     </li>
+
                     <li>
                         <a href="#">
                             <i class="fa-solid fa-bars-staggered"></i>
                             وبلاگ
                         </a>
                     </li>
+
                     <li>
                         <a href="#">
                             <i class="fa-solid fa-circle-info"></i>
                             درباره ما
                         </a>
                     </li>
+
                     <li>
                         <a href="#">
                             <i class="fa-regular fa-headphones"></i>
@@ -49,66 +61,144 @@
                     </li>
                 </ul>
             </nav>
+
             <nav id="right-nav">
                 <i class="fa-solid fa-magnifying-glass"></i>
                 <span>|</span>
                 <i class="fa-solid fa-cart-shopping"></i>
                 <span>|</span>
+
                 <a href="#">
                     <i class="fa-regular fa-user"></i>
-                    <span>ورود/ثبت نام</span>
+                    <span>ورود / ثبت نام</span>
                 </a>
             </nav>
+
         </header>
+
         <header id="main-header">
+
             <div id="right-content">
-                <h1>دنـــیای بی‌نهایتی از رنگ‌ها
+
+                <h1>
+                    دنیای بی‌نهایتی از رنگ‌ها
                     <br>
                     و <span>مزه‌های بی‌نظیر</span>
                     <br>
-                    اینجاست...</h1>
+                    اینجاست...
+                </h1>
+
                 <p>
                     لورم ایپسوم متن ساختگی با تولید
                     <br>
                     سادگی نامفهوم از صنعت چاپ، و با استفاده از طراحان
                     <br>
                     گرافیک است، چاپگرها و متون بلکه روزنامه شرایط تکنولوژی مورد نیاز
-                    <br>است.لورم ایپسوم متن ساختگی با تولید سادگی نامــفهوم از صنعت است.
+                    <br>
+                    است. لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت است.
                 </p>
-                <button type="button" id="buy-btn">
+
+                <button id="buy-btn" type="button">
                     خرید کنید
                 </button>
-                <button type="button" id="tel-btn">
+
+                <button id="tel-btn" type="button">
                     تماس بگیرید
                 </button>
+
             </div>
+
             <div id="left-content">
-                <div id="white-circle"></div>
-                <img src="images/0a272d6f-716d-4aac-934b-4a86735fd371.png" alt="">
+
+                <img alt="ادویه‌ها" id="product" src="images/spice.png">
+
                 <div id="button-wrapper">
-                    <button type="button">
+
+                    <button class="orange-btn" type="button" value="spice">
                         <div class="leavs">
-                            <img src="images/home-page-image-04.png" alt="">
+                            <img alt="" src="images/home-page-image-04.png">
                         </div>
-                        ادویه های ناب
+                        ادویه‌های ناب
                     </button>
-                    <button type="button">
+
+                    <button type="button" value="rose">
                         <div class="leavs">
-                            <img src="images/home-page-image-04.png" alt="">
+                            <img alt="" src="images/home-page-image-04.png">
                         </div>
                         عرقیجات سنتی
                     </button>
-                    <button type="button">
+
+                    <button type="button" value="saffron">
                         <div class="leavs">
-                            <img src="images/home-page-image-04.png" alt="">
+                            <img alt="" src="images/home-page-image-04.png">
                         </div>
-                        دارو های گیاهی
+                        داروهای گیاهی
                     </button>
+
                 </div>
+
             </div>
+
         </header>
     </div>
-
 </main>
+<section id="category">
+    <div class="container">
+        <div id="category-item">
+            <button id="next-btn" type="button">
+                <i class="fa-solid fa-chevron-right"></i>
+            </button>
+            <div id="category-wrapper">
+
+                <div class="category-box">
+                    <a href="#">
+                        <img alt="" src="images/category-image-01.webp">
+                        <p>خشکبار</p>
+                    </a>
+                </div>
+
+                <div class="category-box">
+                    <a href="#">
+                        <img alt="" src="images/category-image-02.webp">
+                        <p>حبوبات</p>
+                    </a>
+                </div>
+
+                <div class="category-box">
+                    <a href="#">
+                        <img alt="" src="images/category-image-03.webp">
+                        <p>چای ها</p>
+                    </a>
+                </div>
+
+                <div class="category-box">
+                    <a href="#">
+                        <img alt="" src="images/category-image-04.webp">
+                        <p>ادویه جات</p>
+                    </a>
+                </div>
+
+                <div class="category-box">
+                    <a href="#">
+                        <img alt="" src="images/category-image-05.webp">
+                        <p>میوه خشک</p>
+                    </a>
+                </div>
+
+                <div class="category-box">
+                    <a href="#">
+                        <img alt="" src="images/category-image-06.webp">
+                        <p>گیاهان دارویی</p>
+                    </a>
+                </div>
+
+            </div>
+
+            <button id="previous-btn" type="button">
+                <i class="fa-solid fa-chevron-left"></i>
+            </button>
+        </div>
+    </div>
+</section>
 </body>
 </html>
