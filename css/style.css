@@ -493,6 +493,7 @@ body {
 .link-product-1:link ,
 .link-product-1:visited{
     text-decoration: none;
+    color: black;
 }
 
 .product-1-content{
@@ -504,10 +505,42 @@ body {
 
 .product-1-content .gram{
     color: gray;
+    font-size: 14px;
 }
 
 .product-1-content span:nth-child(1){
-    font-size: 20px;
+    font-size: 18px;
+}
+
+.product-1-content span:nth-child(7){
+    font-size: 16px;
+}
+
+.product-1-content .money{
+    font-size: 14px;
+}
+
+.product-1-content .buy-btn:link ,
+.product-1-content .buy-btn:visited{
+    text-decoration: none;
+    color: var(--primeryColor);
+    font-size: 14px;
+    background-color: white;
+    padding: 10px 10px;
+    transition: all 0.3s;
+    border-radius: 8px;
+    margin-right: 70px;
+}
+
+.product-1:hover .buy-btn{
+    color: white;
+    background-color: var(--primeryColor);
+}
+
+
+.product-1-content .line-through{
+    font-size: 16px;
+    text-decoration: line-through;
 }
 
 .product-1 img{
