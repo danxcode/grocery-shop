@@ -6,4 +6,5 @@ $(function () {
         $(this).addClass('orange-btn');
         console.log(value);
     })
+
 })
