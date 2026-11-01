@@ -647,6 +647,10 @@ body {
     display: flex;
 }
 
+#purchasing-line img{
+    width: 12%;
+}
+
 .iconLine {
     border: 1px solid var(--primeryColor);
     width: 120px;
@@ -788,7 +792,51 @@ body {
     border-radius: 0 0 0 20px;
 }
 
-#Best-selling-product .discount{
+#Best-selling-product .discount ,
+#latest-products .discount {
     color: var(--primeryColor);
     background-color: #f9f9f7;
+}
+
+
+.spice-banner-wrapper {
+    width: 100%;
+    height: 170px;
+    background-color: var(--primeryColor);
+    border-radius: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 30px;
+    overflow: hidden;
+}
+
+.spice-spoons {
+    width: 360px;
+    object-fit: contain;
+    margin-bottom: 16px;
+}
+
+.spice-banner-content {
+    text-align: center;
+    color: white;
+}
+
+.spice-banner-content h2 {
+    font-size: 28px;
+    font-weight: bold;
+    line-height: 1.7;
+    margin: 0;
+}
+
+.spice-tomato {
+    width: 35px;
+    height: 35px;
+    object-fit: contain;
+}
+
+.spice-pepper {
+    width: 75px;
+    height: 75px;
+    object-fit: contain;
 }
