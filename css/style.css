@@ -644,7 +644,7 @@ body {
     display: flex;
 }
 
-#purchasing-line img{
+#purchasing-line img {
     width: 12%;
 }
 
@@ -783,13 +783,13 @@ body {
     border-radius: 0 0 0 20px;
 }
 
-#Best-selling-product .discount ,
+#Best-selling-product .discount,
 #latest-products .discount {
     color: var(--primeryColor);
     background-color: #f9f9f7;
 }
 
-#spice-banner{
+#spice-banner {
     margin-top: 70px;
 }
 
@@ -974,4 +974,188 @@ body {
 .blog-box:hover .blog-read-btn {
     color: white;
     background-color: var(--secendryColor);
+}
+
+
+#application-form {
+    width: 100%;
+    padding: 30px 0;
+    background-color: #f9f9f7;
+}
+
+
+.application-wrapper {
+    width: 100%;
+    min-height: 370px;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    position: relative;
+}
+
+
+.application-text {
+    width: 23%;
+    position: relative;
+    z-index: 2;
+}
+
+.application-text p {
+    font-size: 14px;
+    line-height: 2.1;
+    color: #888888FF;
+    text-align: justify;
+    margin-top: 20px;
+}
+
+
+.application-form-box {
+    width: 640px;
+    min-height: 370px;
+    flex-shrink: 0;
+    background-color: white;
+    border-radius: 16px;
+    padding: 28px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    z-index: 2;
+}
+
+
+.application-icon {
+    width: 56px;
+    height: 56px;
+    background-color: #f9f9f7;
+    border-radius: 12px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 24px;
+    position: relative;
+    border: 2px solid black;
+}
+
+
+.application-icon i {
+    font-size: 27px;
+    color: var(--secendryColor);
+}
+
+
+#consultation-form {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.application-inputs {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    gap: 15px;
+    margin-bottom: 15px;
+}
+
+.application-inputs input {
+    width: 50%;
+    height: 46px;
+    border: none;
+    outline: none;
+    border-radius: 11px;
+    background-color: #f9f9f7;
+    padding: 0 15px;
+    font-size: 13px;
+    color: #444444FF;
+    text-align: right;
+}
+
+.application-inputs input::placeholder,
+#consultation-form textarea::placeholder {
+    color: #AAAAAAFF;
+}
+
+.application-inputs input:focus,
+#consultation-form textarea:focus {
+    border: 1px solid #AAAAAAFF;
+}
+
+
+#consultation-form textarea {
+    width: 100%;
+    height: 104px;
+    min-height: 104px;
+    border: none;
+    outline: none;
+    border-radius: 11px;
+    background-color: #f9f9f7;
+    padding: 12px 15px;
+    font-size: 13px;
+    color: #444444FF;
+    text-align: right;
+    resize: vertical;
+}
+
+
+#consultation-form button {
+    width: 133px;
+    height: 40px;
+    border: none;
+    border-radius: 9px;
+    background-color: var(--primeryColor);
+    color: white;
+    font-size: 15px;
+    font-weight: bold;
+    cursor: pointer;
+    margin-top: 28px;
+    transition: all 0.3s;
+}
+
+#consultation-form button:hover {
+    background-color: var(--secendryColor);
+}
+
+
+.application-leaf {
+    width: 100px;
+    height: 150px;
+    object-fit: contain;
+    position: absolute;
+    z-index: 3;
+    pointer-events: none;
+}
+
+.leaf-right {
+    right: 18.5%;
+    top: 180px;
+    scale: 2;
+    z-index: 1;
+}
+
+.leaf-left {
+    left: 18.5%;
+    top: 180px;
+    scale: 2;
+    z-index: 1;
+    rotate: -85deg;
+}
+
+.leaf-right-opacity {
+    right: 18.5%;
+    top: 250px;
+    scale: 1.5;
+    z-index: 1;
+    rotate: 10deg;
+    opacity: 0.5;
+}
+
+.leaf-left-opacity {
+    left: 18.5%;
+    top: 250px;
+    scale: 1.5;
+    z-index: 1;
+    rotate: 245deg;
+    opacity: 0.5;
 }
