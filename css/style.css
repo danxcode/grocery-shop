@@ -1200,9 +1200,6 @@ body {
     top: -3px;
 }
 
-.contact-text.phones span {
-    font-family: 'peyda', sans-serif;
-}
 
 .contact-text.mails {
     direction: ltr;
@@ -1254,22 +1251,6 @@ body {
     stroke-width: 2;
 }
 
-.to-top-circle {
-    position: absolute;
-    left: 50%;
-    top: 4px;
-    transform: translateX(-50%);
-    width: 34px;
-    height: 34px;
-    border: 1.5px solid white;
-    border-radius: 50%;
-    background: var(--primeryColor);
-    color: white;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-size: 14px;
-}
 
 .footer-main {
     background-color: var(--primeryColor);
@@ -1280,7 +1261,6 @@ body {
 .footer-about {
     margin: 0 0 50px;
     text-align: center;
-    font-family: 'iranyekan', sans-serif;
     font-size: 12px;
     line-height: 28px;
 }
@@ -1288,7 +1268,6 @@ body {
 .footer-about span {
     display: block;
     white-space: nowrap;
-    font-family: 'iranyekan', sans-serif;
 }
 
 .footer-columns {
@@ -1332,7 +1311,6 @@ body {
 .footer-col li a:visited {
     color: white;
     text-decoration: none;
-    font-family: 'iranyekan', sans-serif;
     font-size: 14px;
     transition: all 0.3s;
 }
