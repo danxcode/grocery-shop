@@ -1,10 +1,16 @@
 $(function () {
-    $('#button-wrapper button').click(function () {
-        $('#button-wrapper button').removeClass('orange-btn')
-        let value = $(this).attr('value');
-        $('#product').attr('src' , 'images/' + value + '.png');
-        $(this).addClass('orange-btn');
-        console.log(value);
-    })
+    $('#menu-btn').click(function () {
+        $('#primary-menu').toggleClass('open');
+    });
 
-})
+    $('#primary-menu a').click(function () {
+        $('#primary-menu').removeClass('open');
+    });
+
+    $('#button-wrapper button').click(function () {
+        $('#button-wrapper button').removeClass('orange-btn');
+        var imageName = $(this).attr('value');
+        $('#product').attr('src', 'images/' + imageName + '.png');
+        $(this).addClass('orange-btn');
+    });
+});

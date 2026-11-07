@@ -3,8 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <meta content="width=device-width, initial-scale=1" name="viewport">
-    <title>Document</title>
+    <title>فروشگاه آنلاین عطاری | گیاهان دارویی و ادویه‌جات</title>
+    <link rel="icon" href="images/site-icon.svg" type="image/svg+xml" sizes="any">
     <link href="css/style.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/responsive.css">
     <script src="node_modules/jquery/dist/jquery.min.js"></script>
     <script src="script/script.js"></script>
 </head>
@@ -24,10 +26,14 @@
                     <img alt="logo" src="images/site-logo.svg">
                 </a>
 
-                <ul>
+                <button id="menu-btn" type="button">
+                    <i class="fa-solid fa-bars"></i>
+                </button>
+
+                <ul id="primary-menu">
                     <li>
                         <a href="#">
-                            <i class="fa-regular fa-house"></i>
+                            <i class="fa-solid fa-house"></i>
                             خانه
                         </a>
                     </li>
@@ -257,9 +263,9 @@
             <div class="product-wrapper">
                 <div class="product">
                     <span class="discount">۵٪</span>
-                    <img alt="" src="images/product-image-02.webp">
+                    <img alt="" src="images/product-image-03.webp">
                     <div class="product-content">
-                        <span>میوه سرو کوهی (ابهل) درجه یک</span>
+                        <span>تخم شنبلیله برند مشکستان درجه یک</span>
                         <br>
                         <br>
                         <span class="gram">بسته 500 گرمی</span>
@@ -291,9 +297,9 @@
                 </div>
                 <div class="product">
                     <span class="discount">۵٪</span>
-                    <img alt="" src="images/product-image-02.webp">
+                    <img alt="" src="images/product-image-06.webp">
                     <div class="product-content">
-                        <span>میوه سرو کوهی (ابهل) درجه یک</span>
+                        <span>آویشن کوهی خشک‌شده طبیعی</span>
                         <br>
                         <br>
                         <span class="gram">بسته 500 گرمی</span>
@@ -316,7 +322,7 @@
             <i class="fa-solid fa-square"></i>
             <h2>مراحل خرید از فروشگاه</h2>
             <span class="hr"></span>
-            <span aria-hidden="true" class="purchasing-menu"><i></i><i></i><i></i></span>
+            <span class="purchasing-menu"><i></i><i></i><i></i></span>
         </div>
         <div id="purchasing-wrapper">
             <div class="right-content">
@@ -376,9 +382,9 @@
         <div class="product-wrapper">
             <div class="product">
                 <span class="discount">۵٪</span>
-                <img alt="" src="images/product-image-02.webp">
+                <img alt="" src="images/product-image-03.webp">
                 <div class="product-content">
-                    <span>میوه سرو کوهی (ابهل) درجه یک</span>
+                    <span>تخم شنبلیله برند مشکستان درجه یک</span>
                     <br>
                     <br>
                     <span class="gram">بسته 500 گرمی</span>
@@ -410,9 +416,9 @@
             </div>
             <div class="product">
                 <span class="discount">۵٪</span>
-                <img alt="" src="images/product-image-02.webp">
+                <img alt="" src="images/product-image-06.webp">
                 <div class="product-content">
-                    <span>میوه سرو کوهی (ابهل) درجه یک</span>
+                    <span>آویشن کوهی خشک‌شده طبیعی</span>
                     <br>
                     <br>
                     <span class="gram">بسته 500 گرمی</span>
@@ -427,9 +433,9 @@
             </div>
             <div class="product">
                 <span class="discount">۵٪</span>
-                <img alt="" src="images/product-image-02.webp">
+                <img alt="" src="images/product-image-03.webp">
                 <div class="product-content">
-                    <span>میوه سرو کوهی (ابهل) درجه یک</span>
+                    <span>تخم شنبلیله برند مشکستان درجه یک</span>
                     <br>
                     <br>
                     <span class="gram">بسته 500 گرمی</span>
@@ -497,9 +503,9 @@
             </div>
             <div class="product">
                 <span class="discount">۵٪</span>
-                <img alt="" src="images/product-image-02.webp">
+                <img alt="" src="images/product-image-03.webp">
                 <div class="product-content">
-                    <span>میوه سرو کوهی (ابهل) درجه یک</span>
+                    <span>تخم شنبلیله برند مشکستان درجه یک</span>
                     <br>
                     <br>
                     <span class="gram">بسته 500 گرمی</span>
@@ -514,9 +520,9 @@
             </div>
             <div class="product">
                 <span class="discount">۵٪</span>
-                <img alt="" src="images/product-image-02.webp">
+                <img alt="" src="images/product-image-06.webp">
                 <div class="product-content">
-                    <span>میوه سرو کوهی (ابهل) درجه یک</span>
+                    <span>آویشن کوهی خشک‌شده طبیعی</span>
                     <br>
                     <br>
                     <span class="gram">بسته 500 گرمی</span>
@@ -666,7 +672,6 @@
         </div>
         <div class="application-wrapper">
 
-            <!-- متن سمت راست -->
             <div class="application-text right-text">
                 <p>
                     لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از
@@ -677,11 +682,9 @@
                 </p>
             </div>
 
-            <!-- برگ سمت راست -->
             <img class="application-leaf leaf-right" src="images/home-page-image-04.png" alt="">
             <img class="application-leaf leaf-right-opacity" src="images/home-page-image-04.png" alt="">
 
-            <!-- فرم اصلی -->
             <div class="application-form-box">
 
                 <div class="application-icon">
